@@ -1,7 +1,7 @@
 
-DB_USER=root
-DB_PWD=Hope70x07@
-DB_NAME=todo
+DB_USER=<usuario>
+DB_PWD=<senha>
+DB_NAME=<nome_do_banco>
 DB_HOST=localhost
 DB_PORT=3306
 DB_DIALECT=mysql
