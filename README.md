@@ -15,6 +15,16 @@ Criar um banco com o nome e senha que será utilizado no arquivo que será criad
 
 
 
+Inslar as dependẽncias:
+
+utilizando o comando yarn
+
+Start da aplicação:
+
+yarn start 
+
+o nodemon é utilizado para ambiente de desenvolvimento apenas.
+
 
 
 
