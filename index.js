@@ -56,13 +56,26 @@ app.post("/login", async (req, res) => {
 
 
 
+app.get("/allusers", validateToken, (req, res) => {
+
+  Users.findAll().then((data) => {
+    res.json(data);
+  });
+});
+
+
+
+/////////////////TODO ROUTES/////////////////////////////
+
+
 
 app.post("/createtodo", validateToken, (req, res) => {
-  const { descricao, prazo } = req.body;
+  const { descricao, prazo, userid } = req.body;
   
-    Todos.create({
+    Todos.create({  
       descricao: descricao,
       prazo: prazo,
+      userid: userid,
     })
       .then(() => {
         res.json("Todo criado!");
